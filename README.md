@@ -1,7 +1,7 @@
 # Advanced LED Control System for Microcontroller
 
 ## Objective
-The following C program simulates an advanced LED control system on a microcontroller. This program includes almost all the major control aspects of LEDs through nested structures to handle state, brightness, and color, along with group settings about LEDs.
+The following C program simulates an advanced LED control system on a microcontroller. This program includes  the major control aspects of LEDs through nested structures to handle state, brightness, and color, along with group settings about LEDs.
 
 ## Structure Definitions
 
