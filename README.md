@@ -1,10 +1,9 @@
 # Advanced LED Control System for Microcontroller
 
 ## Objective
-This C program simulates an advanced LED control system for a microcontroller. It uses nested structures to represent detailed control aspects of LEDs, such as state, brightness, and color, as well as group settings for multiple LEDs.
+The following C program simulates an advanced LED control system on a microcontroller. This program includes almost all the major control aspects of LEDs through nested structures to handle state, brightness, and color, along with group settings about LEDs.
 
 ## Structure Definitions
-The program defines two structures:
 
 - **LEDSettings**: Represents individual LED settings.
   - `state`: 1 for ON, 0 for OFF.
@@ -19,7 +18,7 @@ The program defines two structures:
 ## Functions
 - **initLEDGroup(LEDGroup *group)**: Initializes the LED group with default settings (all LEDs OFF, minimum brightness, and no color).
 - **updateLEDGroupSettings(LEDGroup *group, uint8_t groupState, uint8_t groupBrightness, uint8_t state, uint8_t brightness, uint32_t color)**: Updates both individual LED settings and group settings based on function arguments.
-- **displayLEDGroupStatus(const LEDGroup *group)**: Displays the current status of the individual LED and group settings.
+- **displayLEDGroupStatus(const LEDGroup *group)**: Displays the current status of the individual LED/group settings.
 
 ## How to Compile and Run the Program
 - To compile the program on Linux/Windows using GCC:
@@ -41,16 +40,10 @@ The program defines two structures:
 - **Target Microcontroller**: Specify the microcontroller 
 
   
-  Ensure that you have the correct pin configuration in your code.
+  Ensure that you have the correct pin configuration in your code, this is very  important.
 
 ### 3. Flashing the Program
 
-- **Flashing Tools**: Depending on the microcontroller, you will need flashing tools to upload the binary/hex file to the device. For example:
+- **Flashing Tools**:Depending on the microcontroller, you will use flashing tools to upload a binary/hex file to the device. For example:
   - **ESP32**: Use `esptool.py` for flashing the binary.
- (or utilise the arduino IDE)
-  
-- **Flashing Instructions**: After compiling the code, flash it to the microcontroller using the following command (replace with your specific instructions):
-
-  ```bash
-  # Example for ESP32
-  esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 921600 write_flash -z 0x1000 led_control.bin
+ (or utilise the IDE you have chosen)
